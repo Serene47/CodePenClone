@@ -1,0 +1,38 @@
+
+.code-editor {
+  background-color: #1d1e22;
+}
+
+.header {
+  position: relative;
+  height: 30px;
+  padding: 8px;
+  background: rgba(0,0,0,0.1);
+  color: #aaaebc;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.header h5 {
+  text-transform: uppercase;
+}
+
+.toggle-editor{
+  position: absolute;
+  right : 8px;
+  top : 50%;
+  transform: translateY(-50%);
+  background-color: #444857;
+  color : #fff;
+  border : none;
+  border-radius: 2px;
+  font-size: 14px;
+  padding : 2px 4px;
+}
+
+@media( max-width : 768px) {
+
+  .header {
+    display: none;
+  }
+
+}

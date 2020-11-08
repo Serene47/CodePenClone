@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import '~codemirror/lib/codemirror';
+@import '~codemirror/theme/material-darker';
+@import '~codemirror/addon/lint/lint';
+@import '~@fortawesome/fontawesome-free/css/all';
+
+
+*,*::after,*::before {
+  box-sizing: border-box;
+  margin : 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;;
+}

@@ -1,0 +1,12 @@
+<div class="code-editor"  >
+  <div class="header">
+    <h5>{{mode}}</h5>
+    <button type="button" class="toggle-editor"
+       (click)="toggleEditor()" >
+       <i class="fas"  [ngClass]="{ 'fa-compress-alt' : !shrinked , 'fa-expand-alt' : shrinked}" ></i>
+     </button>
+  </div>
+  <ngx-codemirror  [ngModel]="codeEditorService.content[mode]" [options]="options" (ngModelChange)="onChangeHandler($event)">
+
+  </ngx-codemirror>
+</div>

@@ -1,0 +1,117 @@
+
+.modal {
+  position : fixed;
+  width : 100vw;
+  height : 100vh;
+  top : 0;
+  left : 0;
+  z-index : 10;
+  background: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  position : absolute;
+  top : 5vh;
+  left : 0;
+  right : 0;
+  margin : auto;
+  height : 90vh;
+  width : 90%;
+  max-width: 600px;
+  max-height : 600px;
+  border: 3px solid #252830;
+  border-radius: 4px;
+  background: #131417;
+  color : #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header {
+  margin : 24px 12px 0;
+  border-bottom : 2px solid #252830;
+}
+
+.modal-header h3 {
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-bottom: -2px;
+  border-bottom: 2px solid #47cf73;
+}
+
+.close-button {
+  float : right;
+  padding: 0 4px ;
+  background-color: #444857;
+  color : #fff;
+  font-size: 18px;
+  border : none;
+  line-height: 1;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.modal-body {
+  flex-grow: 1;
+  padding: 24px 12px;
+  overflow-y: auto;
+}
+
+.modal-body .divder{
+  background: #252830;
+  height : 3px;
+  margin : 16px 0;
+}
+
+.external-links-container h4{
+  margin-bottom: 16px;
+}
+
+.add-new-button {
+  font-size: 12px;
+  padding: 4px;
+  border-radius: 2px;
+  background: #444857;
+  border : 1px solid  #444857;
+  color: white;
+}
+
+.modal-footer {
+  padding : 12px;
+  background: #252830;
+}
+
+.input-group {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.input-group input {
+  flex-basis: 95%;
+  padding:8px;
+  background: #e3e4e8 !important;
+  border: 1px solid  #e3e4e8 !important;
+  color: #2c303a;
+  border-radius: 4px;
+}
+
+.input-group a {
+  flex-basis: 5%;
+  align-self: center;
+  text-align: center;
+  color: #d49595;
+  transition: color 200ms;
+}
+
+.input-group a:hover {
+  color: #b13939;
+}
+
+.save-button  {
+  float: right;
+  background: #47cf73;
+  color: #000;
+  padding: 8px;
+  border-radius: 4px;
+  border : none;
+}

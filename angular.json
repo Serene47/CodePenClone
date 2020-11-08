@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "CodepenClone"
+    }
+  },
+  "defaultProject": "CodepenClone",
+  "cli": {
+    "analytics": "18ecfb59-7cf7-4672-b8e5-234bad91efef"
+  }
 }

@@ -1,0 +1,41 @@
+<div class="modal">
+
+
+  <form [formGroup]="externalLinksForm" (ngSubmit)="save()" class="modal-content" >
+    <div class="modal-header">
+      <h3  >Resources</h3>
+      <button type="button" class="close-button" (click)="closeDialog()" > &times;</button>
+    </div>
+
+    <div class="modal-body">
+      <div class="external-links-container">
+
+        <h4> External CSS Libraries</h4>
+
+        <div  *ngFor="let formControl of externalCSSFormArray.controls;let i = index" formArrayName="cssUrls" class="input-group" >
+          <input type="text" placeholder="CSS CDN" [name]="i" [formControl]="formControl"  class="external-links">
+          <a (click)="removeUrl(i,'css')" ><i class="fas fa-trash"></i></a>
+        </div>
+        <button class="add-new-button" type="button" (click)="addNewUrl('css')" >+ add another resource</button>
+      </div>
+      <p class="divder"></p>
+      <div class="external-links-container">
+
+        <h4>External JS Libraries</h4>
+
+        <div  *ngFor="let formControl of externalJSFormArray.controls" formArrayName="jsUrls" class="input-group" >
+          <input type="text" placeholder="JS CDN" [name]="i" [formControl]="formControl" class="external-links">
+          <a (click)="removeUrl(i,'js')" ><i class="fas fa-trash"></i></a>
+        </div>
+        <button class="add-new-button" type="button" (click)="addNewUrl('js')" >+ add another resource</button>
+
+      </div>
+
+    </div>
+
+    <div class="modal-footer">
+      <button class="save-button" type="submit"  >Save & Close</button>
+    </div>
+  </form>
+
+</div>
