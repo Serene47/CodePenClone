@@ -1,5 +1,8 @@
 # CodepenClone
 
+This project is the angular version of https://github.com/WebDevSimplified/React-CodePen-Clone
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.3.
 
 ## Development server

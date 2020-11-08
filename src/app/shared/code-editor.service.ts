@@ -63,14 +63,14 @@ export class CodeEditorService {
     let iframeContent =
       `<html>
           <head>
-            ${this.content.externalCSS.map((link) => `<link rel="stylesheet" href="${link}" \>`)}
+            ${this.content.externalCSS.map((link) => `<link rel="stylesheet" href="${link}" \>`).join("")}
             <style>
               ${this.content.css}
             </style>
           </head>
           <body>
             ${this.content.html}
-            ${this.content.externalJS.map((link) => `<script src="${link}" ></script>`)}
+            ${this.content.externalJS.map((link) => `<script src="${link}" ></script>`).join("")}
             <script>
               ${this.content.javascript}
             </script>
