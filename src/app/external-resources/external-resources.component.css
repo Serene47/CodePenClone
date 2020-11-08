@@ -87,7 +87,7 @@
 }
 
 .input-group input {
-  flex-basis: 95%;
+  flex-basis: 90%;
   padding:8px;
   background: #e3e4e8 !important;
   border: 1px solid  #e3e4e8 !important;
@@ -96,7 +96,7 @@
 }
 
 .input-group a {
-  flex-basis: 5%;
+  flex-basis: 10%;
   align-self: center;
   text-align: center;
   color: #d49595;
